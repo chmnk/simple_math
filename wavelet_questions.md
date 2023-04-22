@@ -1,7 +1,8 @@
 ### Section 4.1.
 
 1) Do you know if there is any good "visual" explanation of the graph Laplacian's spectrum and a graph Fourier transform?
-2) What is the meaning of the chosen heat kernel in that section?
+
+2) What is the meaning of the chosen heat kernel in that section? How is diffusion and heat kernel defined on a graph?
 
 3) If we have a wavelet on a signal in time, it lives in the signal's frequency domain and in time (?)\
 If we have a wavelet on an image, we would operate with a signal with frequences in one dimention of the image and their localization in another dimension of the image (?)\
