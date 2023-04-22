@@ -29,8 +29,15 @@ Then how do I keep the information that this wavelet is localized on the same su
 
 8) Didn't fully get what happens when we contract one of the dimenstions of the tensor.
 
-### Other questions
-9) Is the depth of positional encoding given by K?
+### Other questions for Section 4
+9) Is the depth of positional encoding given by $K$?
+
 10) I always took it for granted that we can use things coming from the graph spectrum as positional encodings, but (Q 1) I don't get how can eigenvectors of two different graphs of different sizes be related at all?
-11) Do the matrices we learn during training have the number of nodes dimension N inside of them or not? (I didn't fully understand what do we learn)
-12) 
+
+11) Do the matrices we learn during training have the number of nodes dimension $N$ inside of them or not? (I didn't fully understand what do we learn)
+
+
+### Section 5.2
+12) Is the number of clusters $C$ a fixed hyperparameter? (At least in the cited Ying et al, 2018, it was pre-defined).
+13) I hoped so much that they get clustering somehow directly from the atom embeddings without explicit clustering step :( :( :( I thought that a wavelet itself defines a substructure in the molecule :(
+14) 
