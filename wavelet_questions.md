@@ -46,5 +46,3 @@ Then how do I keep the information that this wavelet is localized on the same su
 
 ### Other questions
 17) How numerically stable are networks that have eigenvector/eigenvalaue computations in them? Is it ok to use float32 in them?
-
-
