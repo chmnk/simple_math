@@ -1,4 +1,4 @@
-### Section 4.1.
+### Section 4.1
 
 1) Do you know if there is any good "visual" explanation of the graph Laplacian's spectrum and a graph Fourier transform?
 
@@ -17,13 +17,20 @@ What is a "mother wavelet" btw?\
 
 6) $L = U\Lambda U^{-1}=U\Lambda U^T$ (since U is orthonormal?)\
 Then, $\psi_s=U\Sigma_sU^T$.
-Intuitively, I thought that $\Sigma_s$ a filter that we apply to the spectrum of a graph. But then I don't fully get what $\psi_s$ is.
+Intuitively, I thought that $\Sigma_s$ a filter that we apply to the spectrum of a graph. So in my mind it kind of already has the meaning of a wavelet. But then I don't fully get what $\psi_s$ is.
 Or do we just need $U$ to define anything that lies in the spectral domain of our graph??
 
 7) Connected to Q 1), 6).\
-If I have 2 graphs of, say, 8 and 15 nodes that share the same substructure, what would be the relation between their spectra?\
-If I generated a wavelet with low s that is localized on that substructure, for each graph it will be defined through their spectra which are different.\
+If I have 2 graphs of, say, 8 and 15 nodes that share the same substructure (for example, c1nc(C)nc1, what would be the relation between their spectra?\
+If I generate a wavelet with low $s$ that is localized on an atom of this 5-membered ring substructure, for each graph it will be defined through their spectra which are different. (?)\
 Then how do I keep the information that this wavelet is localized on the same substructure?
 
-8) 
+### Section 4.2
 
+8) Didn't fully get what happens when we contract one of the dimenstions of the tensor.
+
+### Other questions
+9) Is the depth of positional encoding given by K?
+10) I always took it for granted that we can use things coming from the graph spectrum as positional encodings, but (Q 1) I don't get how can eigenvectors of two different graphs of different sizes be related at all?
+11) Do the matrices we learn during training have the number of nodes dimension N inside of them or not? (I didn't fully understand what do we learn)
+12) 
