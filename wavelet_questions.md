@@ -31,13 +31,20 @@ Then how do I keep the information that this wavelet is localized on the same su
 
 ### Other questions for Section 4
 9) Is the depth of positional encoding given by $K$?
-
 10) I always took it for granted that we can use things coming from the graph spectrum as positional encodings, but (Q 1) I don't get how can eigenvectors of two different graphs of different sizes be related at all?
-
 11) Do the matrices we learn during training have the number of nodes dimension $N$ inside of them or not? (I didn't fully understand what do we learn)
 
 
 ### Section 5.2
-12) Is the number of clusters $C$ a fixed hyperparameter? (At least in the cited Ying et al, 2018, it was pre-defined).
-13) I hoped so much that they get clustering somehow directly from the atom embeddings without explicit clustering step :( :( :( I thought that a wavelet itself defines a substructure in the molecule :(
-14) 
+12) Is the number of clusters $C$ a fixed hyperparameter? (At least in the cited Ying et al, 2018, it was pre-defined). 
+13) What happens if we train a model on large molecules with C selected to match them and then run it on a small molecule? Will we get repeated clusters? 
+14) I hoped so much that they get clustering somehow directly from the atom embeddings without explicit clustering step :( :( :( I thought that a wavelet itself defines a substructure in the molecule :(
+
+### Results
+15) From Fig. 5 and 4, I am actually not persuaded that the model learnt anything very meaningful about functional groups and clustering... Learning that NH3+ terminal group or a part of a 5-membered ring (even not the whole one) is a separate cluster doesn't look as big deal.... Interesting that in the peptide case, it didn't learn the backbone as something separate.
+16) Same for the T-SNE -- it is expected to see some separation in the results of a well-performing model... But they don't explain anything.
+
+### Other questions
+17) How numerically stable are networks that have eigenvector/eigenvalaue computations in them? Is it ok to use float32 in them?
+
+
